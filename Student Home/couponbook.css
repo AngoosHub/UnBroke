@@ -1,0 +1,38 @@
+body {
+    background-color: royalblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+.nav {
+    background-color: white;
+}
+#addressText {
+    float: left;
+    width: 90%;
+    font-size: 17px;
+    margin-bottom: 2px;
+}
+
+#searchIcon {
+    width: 9%;
+}
+
+#home, #liked, #coupon {
+    float: left;
+    width: 33%;
+    text-align: center;
+    background-color: white;
+    margin-top: 10px;
+    height: 50px;
+}
+
+
+#couponText, #likedText, #homeText {
+    margin-top: 15px;
+}
+
+#qr, #addTo {
+    width: 70%;
+    height: 250px;
+}
