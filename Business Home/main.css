@@ -1,0 +1,117 @@
+.overBanner {
+  width: 100%;
+  height: 30px;
+  background-color: grey;
+}
+
+.yourCompany {
+  height: 100%;
+  width: 100px;
+  float: left;
+  background-color: lightgrey;
+}
+
+.signOut {
+  height: 100%;
+  width: 100px;
+  float: right;
+  background-color: lightgrey;
+}
+
+.banner {
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  background-color: grey;
+  margin-top: 3px;
+}
+
+.logo {
+  height: 100%;
+  width: 100px;
+  float: left;
+  background-color: lightgrey;
+}
+
+.post {
+  height: 100%;
+  width: 100px;
+  display: inline-block;
+  background-color: lightgrey;
+}
+
+.content {
+  width: 500px;
+  height: 1000px;
+  margin: auto;
+}
+
+.contentTitle {
+  width: 400px;
+  height: 50px;
+  background-color: grey;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.ad {
+  width: 100%;
+  height: 250px;
+  margin-top: 15px;
+  background-color: grey;
+}
+
+.adLHS {
+  width: 60%;
+  height: 250px;
+  background-color: lightgrey;
+  float: left;
+}
+
+.adRHS {
+  width: 40%;
+  height: 250px;
+  background-color: grey;
+  float: left;
+}
+
+.adName {
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  margin-top: 15px;
+  background-color: grey;
+}
+
+.adDescription {
+  width: 90%;
+  height: 90px;
+  margin: auto;
+  margin-top: 15px;
+  background-color: grey;
+}
+
+.adDate {
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  margin-top: 15px;
+  background-color: grey;
+}
+
+.adEdit {
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  margin-top: 67.5px;
+  background-color: lightgrey;
+}
+
+.adDelete {
+  width: 90%;
+  height: 50px;
+  margin: auto;
+  margin-top: 15px;
+  background-color: lightgrey;
+}
+

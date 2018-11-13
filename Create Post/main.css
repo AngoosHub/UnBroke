@@ -1,0 +1,83 @@
+.overBanner {
+  width: 100%;
+  height: 30px;
+  background-color: grey;
+}
+
+.yourCompany {
+  height: 100%;
+  width: 100px;
+  float: left;
+  background-color: lightgrey;
+}
+
+.signOut {
+  height: 100%;
+  width: 100px;
+  float: right;
+  background-color: lightgrey;
+}
+
+.banner {
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  background-color: grey;
+  margin-top: 3px;
+}
+
+.logo {
+  height: 100%;
+  width: 100px;
+  float: left;
+  background-color: lightgrey;
+}
+
+.post {
+  height: 100%;
+  width: 100px;
+  display: inline-block;
+  background-color: lightgrey;
+}
+
+.content{
+  width: 800px;
+  height: 1000px;
+  margin: auto;
+}
+
+.title{
+  height: 50px;
+  width: 50%;
+  background-color: grey;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.promoTitle{
+  height: 100px;
+  width: 100%;
+  background-color: grey;
+  margin-top: 15px;
+}
+
+.promoDescription{
+  height: 100px;
+  width: 100%;
+  background-color: grey;
+  margin-top: 15px;
+}
+
+.promoStartDate{
+  height: 100px;
+  width: 100%;
+  background-color: grey;
+  margin-top: 15px;
+}
+
+.promoEndDate{
+  height: 100px;
+  width: 100%;
+  background-color: grey;
+  margin-top: 15px;
+}
