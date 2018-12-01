@@ -1,3 +1,6 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
 #logo {
     width: 8%;
 }
@@ -29,4 +32,31 @@
 
 #twitter {
     width: 15%;
+}
+
+.top {
+    height: 100px;
+}
+
+.container {
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    border-radius: 2px;
+    border-style: solid;
+}
+
+#search {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#searchBar {
+    width: 300px;
+    height: 30px;
+    margin: auto;
+}
+
+#searchButton {
+    height: 100px;
 }
