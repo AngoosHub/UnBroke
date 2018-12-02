@@ -10,20 +10,23 @@
 </head>
 
 <body>
-  <div class="overBanner">
-    <div class="yourCompany"></div>
-    <div class="signOut"></div>
-  </div>
-  <div class="banner">
-    <div class="logo"></div>
-    <div class="post"></div>
-  </div>
   <div class="content">
     <div class="title"></div>
-    <div class="promoTitle"></div>
-    <div class="promoDescription"></div>
-    <div class="promoStartDate"></div>
-    <div class="promoEndDate"></div>
+    <form class="postForm">
+      <label for="title">Edit Promotion Title</label>
+      <input type="text" id="title">
+
+      <label for="discription">Edit Promotion Discription</label>
+      <textarea id="textArea"></textarea>
+
+      <label for="startDate">Edit Start Date</label>
+      <input type="date" id="startDate">
+
+      <label for="endDate">Edit End Date</label>
+      <input type="date" id="endDate">
+
+      <input type="submit" value="edit" id="btn">
+    </form>
   </div>
 </body>
 

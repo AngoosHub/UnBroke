@@ -1,83 +1,41 @@
-.overBanner {
+.postForm {
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 2rem auto;
+  border: 2px solid #1ebbd7;
+  padding: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.postForm>label {
+  text-transform: uppercase;
+  display: block;
+  font-size: 14px;
+  padding: 1rem 0 .25rem;
+}
+
+.postForm>input,
+textarea {
+  border-radius: 10px;
+  display: block;
   width: 100%;
-  height: 30px;
-  background-color: grey;
+  font-size: 18px;
+  border: 2px solid #005073;
+  padding: .5rem;
 }
 
-.yourCompany {
-  height: 100%;
-  width: 100px;
-  float: left;
-  background-color: lightgrey;
+#btn {
+  border-radius: 10px;
+  text-transform: uppercase;
+  border: 0;
+  background: #005073;
+  padding: .5rem;
+  color: white;
+  margin: 1rem 0;
+  width: auto;
 }
 
-.signOut {
-  height: 100%;
-  width: 100px;
-  float: right;
-  background-color: lightgrey;
-}
-
-.banner {
-  text-align: center;
-  height: 50px;
-  width: 100%;
-  background-color: grey;
-  margin-top: 3px;
-}
-
-.logo {
-  height: 100%;
-  width: 100px;
-  float: left;
-  background-color: lightgrey;
-}
-
-.post {
-  height: 100%;
-  width: 100px;
-  display: inline-block;
-  background-color: lightgrey;
-}
-
-.content{
-  width: 800px;
-  height: 1000px;
-  margin: auto;
-}
-
-.title{
-  height: 50px;
-  width: 50%;
-  background-color: grey;
-  margin: auto;
-  margin-top: 15px;
-}
-
-.promoTitle{
-  height: 100px;
-  width: 100%;
-  background-color: grey;
-  margin-top: 15px;
-}
-
-.promoDescription{
-  height: 100px;
-  width: 100%;
-  background-color: grey;
-  margin-top: 15px;
-}
-
-.promoStartDate{
-  height: 100px;
-  width: 100%;
-  background-color: grey;
-  margin-top: 15px;
-}
-
-.promoEndDate{
-  height: 100px;
-  width: 100%;
-  background-color: grey;
-  margin-top: 15px;
+#btn:hover {
+  background: #107dac;
+  
 }
