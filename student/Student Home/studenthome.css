@@ -14,7 +14,7 @@ body {
 
 #searchlogo {
     float: left;
-    width: 40%
+    width: 39.5%
 }
 
 #searchImage {
@@ -64,7 +64,7 @@ body {
 }
 
 .top {
-    height: 100px;
+    height: 65px;
 }
 
 .container {
@@ -74,7 +74,7 @@ body {
     border-radius: 2px;
     border-style: solid;
     overflow-y: scroll;
-}
+}   
 
 #search {
     text-align: center;
