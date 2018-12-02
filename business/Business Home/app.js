@@ -17,7 +17,7 @@ function refData(data) {
 
     var outer = $("<div/>").addClass("ad");
 
-    var title = $("<div/>").addClass("title").html("<p>" + k + "</p>");
+    var title = $("<div/>").addClass("title").html("<p>" + dosTacos[k]["Name"] + "</p>");
     outer.append(title);
 
     var dis = $("<div/>").addClass("discription").html("<p>" + dosTacos[k]["Deal"] + "</p>");
@@ -27,13 +27,13 @@ function refData(data) {
 
     var start = $("<div/>").addClass("startDate");
     var p1 = $("<p/>").addClass("dateTitle").html("Start Date:");
-    var p2 = $("<p/>").addClass("contentDate").html(dosTacos[k]["Start date"]);
+    var p2 = $("<p/>").addClass("contentDate").html(dosTacos[k]["Start_Date"]);
     start.append(p1).append(p2);
     dates.append(start);
 
     var start = $("<div/>").addClass("endDate");
     var p3 = $("<p/>").addClass("dateTitle").html("End Date:");
-    var p4 = $("<p/>").addClass("contentDate").html(dosTacos[k]["End date"]);
+    var p4 = $("<p/>").addClass("contentDate").html(dosTacos[k]["End_Date"]);
     start.append(p3).append(p4);
     dates.append(start);
 
@@ -42,3 +42,8 @@ function refData(data) {
     $(".content").append(outer);
   }
 }
+
+var goHome = document.getElementById("menuImage");
+goHome.addEventListener("click", function() {
+  window.location.href = "../Create Post/index.html";
+})
