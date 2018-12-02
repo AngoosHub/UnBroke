@@ -7,6 +7,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAYRdnbgHwRE4-G_IRb9wMGtphywixvwbg",
+    authDomain: "unbroke-30d50.firebaseapp.com",
+    databaseURL: "https://unbroke-30d50.firebaseio.com",
+    projectId: "unbroke-30d50",
+    storageBucket: "unbroke-30d50.appspot.com",
+    messagingSenderId: "139539380058"
+  };
+  firebase.initializeApp(config);
+  var database = firebase.database();
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
@@ -28,16 +43,7 @@
           <img src="images/books.svg" id="couponbookImage">
         </div>
       </div>
-  <div class="content">
-    <div class="ad">
-      <div class="title"><p>2 for 1 Tacos</p></div>
-      <div class="discription"><p>You will get a free taco with the purchase of any other taco. This coupon can only be used once per exchange.</p></div>
-      <div class="dates">
-        <div class="startDate"><p class="dateTitle">Start Date:</p><p class="content">December 5, 2018</p></div>
-        <div class="endDate"><p class="dateTitle">End Date:</p><p class="content">December 10, 2018</p></div>
-      </div>
-    </div>
-  </div>
+  <div class="content"></div>
 </body>
-
+<script src="app.js"></script>
 </html>

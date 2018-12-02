@@ -7,6 +7,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAYRdnbgHwRE4-G_IRb9wMGtphywixvwbg",
+    authDomain: "unbroke-30d50.firebaseapp.com",
+    databaseURL: "https://unbroke-30d50.firebaseio.com",
+    projectId: "unbroke-30d50",
+    storageBucket: "unbroke-30d50.appspot.com",
+    messagingSenderId: "139539380058"
+  };
+  firebase.initializeApp(config);
+  var database = firebase.database();
+</script>
 </head>
 
 <body>
@@ -47,5 +61,6 @@
     </form>
   </div>
 </body>
+<script src="app.js"></script>
 
 </html>

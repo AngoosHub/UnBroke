@@ -13,6 +13,7 @@ body {
 .ad{
   border-radius: 10px;
   margin: auto;
+  margin-top: 20px;
   width: 80%;
   height: 300px;
   border: 2px solid #005073;
@@ -132,7 +133,7 @@ body {
 }
 
 
-.dates>div>p.content{
+.dates>div>p.contentDate{
   width: 100%;
   margin: 0;
   font-size: 18px;
