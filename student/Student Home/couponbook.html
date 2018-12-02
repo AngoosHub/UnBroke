@@ -33,13 +33,69 @@
             </div>
         </a>
     </div>
-
     <div class="container">
-        <div id="title">Coupon Book</div>
-        <div id="list1">List1</div>
-        <div id="list2">List2</div>
-        <div id="list3">List3</div>
-    </div>
+        <div id="couponbooktitle">Coupon Book</div>
+        <div class="coupon1">
+            <div class="list1">
+                <div class="ad">
+                    <div class="title">
+                        <p>2 for 1 Tacos</p>
+                    </div>
+                    <div class="description">
+                        <p>You will get a free taco with the purchase of any other taco. This coupon can only be used
+                            once
+                            per exchange.</p>
+                        <div id="print">
+                            <form action="/action_page.php">
+                                <input type="submit" value="Print" id="printButton" onclick="myFunction()">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="dates">
+                        <div class="startDate">
+                            <p class="dateTitle">Start Date:</p>
+                            <p class="content">December 5, 2018</p>
+                        </div>
+                        <div class="endDate">
+                            <p class="dateTitle">End Date:</p>
+                            <p class="content">December 10, 2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coupon2">
+                <div class="list2">
+                    <div class="ad">
+                        <div class="title">
+                            <p>Buy 1 get one FREE</p>
+                        </div>
+                        <div class="description">
+                            <p>You will get a free taco with the purchase of any other taco. This coupon can only be
+                                used
+                                once
+                                per exchange.</p>
+                            <div id="print">
+                                <form action="/action_page.php">
+                                    <input type="submit" value="Print" id="printButton" onclick="myFunction()">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="dates">
+                            <div class="startDate">
+                                <p class="dateTitle">Start Date:</p>
+                                <p class="content">December 5, 2018</p>
+                            </div>
+                            <div class="endDate">
+                                <p class="dateTitle">End Date:</p>
+                                <p class="content">December 10, 2018</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>function myFunction() {
+                    window.print();
+                }</script>
 </body>
 
 </html>
