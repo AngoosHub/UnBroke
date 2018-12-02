@@ -1,37 +1,66 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-#logo {
-    width: 8%;
-}
 
-#facebook, #instagram, #twitter, #logo {
+#menu {
     float: left;
-    text-align: center;
+    width: 3%;
 }
 
-#facebook, #instagram, #twitter {
-    font-size: 20px;
+#menuImage {
+    width: 40px;
+    height: 40px;
+}
+
+#searchlogo {
+    float: left;
+    width: 40%
+}
+
+#searchImage {
+    margin-bottom: 5px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    transform: translateY(-7px) translateX(-6px);
+}
+
+#logo {
+    float: left;
+    width: 3%;
+}
+
+#logoImage {
+    width: 40px;
+    height: 40px;
+}
+
+#home {
+    float: left;
+    width: 3.5%
+}
+
+#homeImage {
+    width: 35px;
+    height: 35px;
+}
+
+#couponbook {
+    float: left;
+    width: 3%;
+}
+
+#couponbookImage {
+    width: 33px;
+    height: 33px;
 }
 
 #name {
     float: left;
-    width: 45%;
-    font-size: 30px;
+    width: 46%;
+    font-size: 35px;
     font-weight: bold;
     margin-left: 15px;
-}
-
-#facebook {
-    width: 15%;
-}
-
-#instagram {
-    width: 15%;
-}
-
-#twitter {
-    width: 15%;
 }
 
 .top {
@@ -40,23 +69,48 @@ body {
 
 .container {
     width: 700px;
-    height: 400px;
+    height: 580px;
     margin: auto;
     border-radius: 2px;
     border-style: solid;
+    overflow-y: scroll;
 }
 
 #search {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 #searchBar {
     width: 300px;
     height: 30px;
     margin: auto;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-color: #1ebbd7;
+    font-size: 13px;
 }
 
 #searchButton {
-    height: 100px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    border: 0;
+    background: #005073;
+    padding: .5rem;
+    color: white;
+    margin: 1rem 0;
+    width: auto;
+}
+      
+#btn:hover{
+    background: #107dac;
+}
+
+#list1, #list2, #list3, #list4 {
+    height: 120px;
+    width: 500px;
+    border-radius: 2px;
+    border-style: solid;
+    margin: 30px auto;
 }
