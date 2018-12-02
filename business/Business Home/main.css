@@ -1,125 +1,145 @@
-.overBanner {
-  width: 100%;
-  height: 30px;
-  background-color: grey;
-}
-
-.yourCompany {
-  height: 100%;
-  float: left;
-  background-color: lightgrey;
-}
-
-.signOut {
-  height: 100%;
-  float: right;
-  background-color: lightgrey;
-}
-
-.banner {
-  text-align: center;
-  height: 50px;
-  width: 100%;
-  background-color: grey;
-  margin-top: 3px;
-}
-
-.logo {
-  height: 100%;
-  width: 100px;
-  float: left;
-  background-color: lightgrey;
-}
-
-.post {
-  height: 100%;
-  width: 100px;
-  display: inline-block;
-  background-color: lightgrey;
-}
-
-.filler {
-  width: 100px;
-  height: 100%;
-  float: right;
-}
-
-.content {
-  width: 500px;
-  height: 1000px;
+.content{
+  width: 700px;
   margin: auto;
 }
 
-.contentTitle {
-  text-align: center;
-  width: 400px;
-  height: 50px;
-  background-color: grey;
+.ad{
+  border-radius: 10px;
   margin: auto;
+  width: 80%;
+  height: 300px;
+  border: 2px solid #005073;
+}
+
+
+
+.title{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+  height: 75px;
+  width: 560px;
+}
+
+.title>p{
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.discription{
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  height: 150px;
+  width: 560px;
+  border-bottom: 2px solid #005073;
+  border-top: 2px solid #005073;
+}
+
+.discription>p{
+  padding-top: 20px;
+  margin: auto;
+  width: 90%;
+}
+
+.dates{
+  margin: auto;
+  height: 25%;
+  width: 90%;
+}
+
+.dates>div{
+  text-align: center;
+  height: 95%;
+  width: 49.8%;
+}
+
+.startDate{
+  float: left;
+  border-right: 2px solid #005073;
+}
+
+.endDate{
+  float: right;
+}
+#menu {
+  float: left;
+  width: 3%;
+}
+
+#menuImage {
+  width: 40px;
+  height: 40px;
+}
+
+#searchlogo {
+  float: left;
+  width: 40%
+}
+
+#searchImage {
+  margin-bottom: 5px;
+  float: left;
+  width: 60px;
+  height: 60px;
+  transform: translateY(-7px) translateX(-6px);
+}
+
+#logo {
+  float: left;
+  width: 3%;
+}
+
+#logoImage {
+  width: 40px;
+  height: 40px;
+}
+
+#home {
+  float: left;
+  width: 3.5%
+}
+
+#homeImage {
+  width: 35px;
+  height: 35px;
+}
+
+#couponbook {
+  float: left;
+  width: 3%;
+}
+
+#couponbookImage {
+  width: 33px;
+  height: 33px;
+}
+
+#name {
+  float: left;
+  width: 46%;
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+
+.dates>div>p.content{
+  width: 100%;
+  margin: 0;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dates>div>p.dateTitle{
+  color: #107dac;
+  margin: 0;
   margin-top: 10px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.ad {
-  width: 100%;
-  height: 250px;
-  margin-top: 15px;
+.top{
+  height: 100px;
 }
-
-.adLHS {
-  border-radius: 10px 0 0 10px;
-  width: 60%;
-  height: 250px;
-  background-color: lightgrey;
-  float: left;
-}
-
-.adRHS {
-  border-radius: 0 10px 10px 0;
-  width: 40%;
-  height: 250px;
-  background-color: grey;
-  float: left;
-}
-
-.adName {
-  width: 90%;
-  height: 50px;
-  margin: auto;
-  margin-top: 15px;
-  background-color: grey;
-}
-
-.adDescription {
-  width: 90%;
-  height: 90px;
-  margin: auto;
-  margin-top: 15px;
-  background-color: grey;
-}
-
-.adDate {
-  width: 90%;
-  height: 50px;
-  margin: auto;
-  margin-top: 15px;
-  background-color: grey;
-}
-
-.adEdit {
-  text-align: center;
-  width: 90%;
-  height: 50px;
-  margin: auto;
-  margin-top: 67.5px;
-  background-color: lightgrey;
-}
-
-.adDelete {
-  text-align: center;
-  width: 90%;
-  height: 50px;
-  margin: auto;
-  margin-top: 15px;
-  background-color: lightgrey;
-}
-
