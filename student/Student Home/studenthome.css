@@ -1,5 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background: url("backgroundimage.jpg");
+    background-size: cover;
 }
 
 #menu {
@@ -74,6 +76,7 @@ body {
     border-radius: 2px;
     border-style: solid;
     overflow-y: scroll;
+    background-color: white;
 }   
 
 #search {
@@ -102,15 +105,17 @@ body {
     margin: 1rem 0;
     width: auto;
 }
-      
+
 #btn:hover{
     background: #107dac;
 }
 
 #list1, #list2, #list3, #list4 {
-    height: 120px;
+    height: 170px;
     width: 500px;
     border-radius: 2px;
     border-style: solid;
     margin: 30px auto;
 }
+
+
