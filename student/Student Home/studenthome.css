@@ -110,12 +110,30 @@ body {
     background: #107dac;
 }
 
-#list1, #list2, #list3, #list4 {
-    height: 170px;
-    width: 500px;
+#dosTacosPicture {
+    width: 300px;
+    height: 180px;
+    margin: 2.5px auto;
+    text-align: center;
+    float: right;
+    border-style: ridge;
     border-radius: 2px;
-    border-style: solid;
-    margin: 30px auto;
 }
 
+#dosName, #ratingDiv, #dosReview {
+    float: left;
+    width: 30%;
+    font-size: 25px;
+    margin: 4px auto;
+}
+
+#ratingPicture {
+    width: 110px;
+    height: 25px;
+}
+
+#testimage {
+    width: 680px;
+    height: 110px;
+}
 
