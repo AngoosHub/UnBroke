@@ -24,10 +24,7 @@ function submitForm(form) {
       Start_Date: startDate,
       url: downloadURL
     }
-    
-  console.log(data);
 
-  
   var ref = database.ref('businesses/Dos Tacos/Coupons');
   ref.push(data);
   window.location.href = "../Business home/index.html";
