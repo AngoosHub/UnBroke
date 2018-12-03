@@ -44,6 +44,9 @@ function refData(data) {
     dates.append(start);
     outer.append(dates);
 
+    var image = $("<div/>").addClass("imageDiv").html('<p>Image</p>');
+    dis.append(image);
+
     var dlt = $('<button/>').addClass('delete').html('<p>Delete</p>');
     dis.append(dlt);
 
