@@ -44,7 +44,7 @@ function refData(data) {
     dates.append(start);
     outer.append(dates);
 
-    var image = $("<div/>").addClass("imageDiv").html('<p>Image</p>');
+    var image = $("<div/>").addClass("imageDiv").html('<img src="' + dosTacos[k]["url"] + '">');
     dis.append(image);
 
     var dlt = $('<button/>').addClass('delete').html('<p>Delete</p>');
@@ -80,7 +80,7 @@ function pressDelete(x) {
 
 function pressEdit(x) {
   var dosTacos = database.ref("businesses/Dos Tacos/Coupons");
-  var id = x.target.parentElement.getAttribute('id');
+  var id = x.target.parentElement.parentElement.getAttribute('id');
   var current = {
     id: id
   };
