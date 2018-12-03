@@ -63,6 +63,7 @@ function setup() {
     });
 
     txtSignUp[0].addEventListener('click', e => {
+        alert("Check1");
         // Get email and password fields
         const email = txtEmail[0].value;
         const pass = txtPassword[0].value;
@@ -70,17 +71,30 @@ function setup() {
         // Sign Up
         const promise = auth.createUserWithEmailAndPassword(email, pass);
         promise.catch(e => console.log(e.message));
+        alert("Check the console to see what is wrong");
     });
 
-    txtSignUp[0].addEventListener('click', e => {
+    txtSignUp[1].addEventListener('click', e => {
         // Get email and password fields
-        const email = txtEmail[0].value;
-        const pass = txtPassword[0].value;
+        const email = txtEmail[1].value;
+        const pass = txtPassword[1].value;
         const auth = firebase.auth();
         // Sign Up
         const promise = auth.createUserWithEmailAndPassword(email, pass);
         promise.catch(e => console.log(e.message));
+
+        firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log(errorCode);
+            console.log(errorMessage);
+            alert("Check1");
+        });
+
     });
+
+    
 
     // Add a realtime listener
     firebase.auth().onAuthStateChanged(firebaseUser => {
@@ -137,14 +151,6 @@ const txtLogin = document.getElementsByClassName('txtLogin');
 var email = txtEmail[0].value;
 var password = txtPassword[0].value;
 
-
-
-firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
-    // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    // ...
-});
 
 
 
