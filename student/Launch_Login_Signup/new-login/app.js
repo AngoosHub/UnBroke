@@ -63,7 +63,6 @@ function setup() {
     });
 
     txtSignUp[0].addEventListener('click', e => {
-        alert("Check1");
         // Get email and password fields
         const email = txtEmail[0].value;
         const pass = txtPassword[0].value;
@@ -71,7 +70,6 @@ function setup() {
         // Sign Up
         const promise = auth.createUserWithEmailAndPassword(email, pass);
         promise.catch(e => console.log(e.message));
-        alert("Check the console to see what is wrong");
     });
 
     txtSignUp[1].addEventListener('click', e => {
@@ -89,7 +87,6 @@ function setup() {
             var errorMessage = error.message;
             console.log(errorCode);
             console.log(errorMessage);
-            alert("Check1");
         });
 
     });
