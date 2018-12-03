@@ -10,7 +10,7 @@ body {
   width: 700px;
   margin: 0 auto;
   background-color: white;
-  overflow-y: scroll;
+  overflow-y: auto;
   border-radius: 2px;
   border-style: solid;
   border-color: #005073;
@@ -59,22 +59,20 @@ body {
 
 .dates{
   margin: auto;
-  height: 25%;
 }
 
 .dates>div{
   text-align: center;
-  height: 95%;
-  width: 50%;
+  width: 48%;
 }
 
 .startDate{
-  float: left;
   border-right: 2px solid #005073;
+  float: left;
 }
 
-.endDate{
-  float: left;
+.endDate { 
+  float: right;
 }
 
 #menu {
@@ -161,7 +159,6 @@ body {
   border: 0;
   background: #005073;
   padding: .5rem;
-  margin-bottom: 5rem;
   color: white;
   width: 100px;
   float: right;
@@ -174,7 +171,6 @@ body {
   border: 0;
   background: #005073;
   padding: .5rem;
-  margin-bottom: 5rem;
   color: white;
   width: 100px;
   float: right;
