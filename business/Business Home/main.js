@@ -68,12 +68,16 @@ goHome.addEventListener("click", function () {
 
 function pressDelete(x) {
   var dosTacos = database.ref("businesses/Dos Tacos/Coupons");
-  console.log(database.ref("businesses/Dos Tacos/Coupons"));
   var id = x.target.parentElement.getAttribute('id');
   dosTacos.child(id).remove();
 }
 
-function pressEdit(x){
-  
+function pressEdit(x) {
+  var dosTacos = database.ref("businesses/Dos Tacos/Coupons");
+  var id = x.target.parentElement.getAttribute('id');
+  var current = {
+    id: id
+  };
+  database.ref('businesses/current').update(current);
+  window.location.href = "../Edit Post/index.html";
 }
-  

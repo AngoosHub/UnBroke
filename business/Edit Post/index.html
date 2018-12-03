@@ -7,35 +7,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAYRdnbgHwRE4-G_IRb9wMGtphywixvwbg",
+    authDomain: "unbroke-30d50.firebaseapp.com",
+    databaseURL: "https://unbroke-30d50.firebaseio.com",
+    projectId: "unbroke-30d50",
+    storageBucket: "unbroke-30d50.appspot.com",
+    messagingSenderId: "139539380058"
+  };
+  firebase.initializeApp(config);
+  var database = firebase.database();
+</script>
 </head>
 
 <body>
-    <div class="top">
-        <div id="menu">
-          <img src="images/menu.svg" id="menuImage">
-        </div>
-        <div id="searchlogo">
-          <img src="images/search.svg" id="searchImage">
-        </div>
-        <div id="logo">
-          <img src="images/logo.svg" id="logoImage">
-        </div>
-        <div id="name">UnBroke</div>
-        <div id="home">
-          <img src="images/home.png" id="homeImage">
-        </div>
-        <div id="couponbook">
-          <img src="images/books.svg" id="couponbookImage">
-        </div>
-      </div>
+  <div class="top">
+    <div id="menu">
+      <img src="images/menu.svg" id="menuImage">
+    </div>
+    <div id="searchlogo">
+      <img src="images/search.svg" id="searchImage">
+    </div>
+    <div id="logo">
+      <img src="images/logo.svg" id="logoImage">
+    </div>
+    <div id="name">UnBroke</div>
+    <div id="home">
+      <img src="images/home.png" id="homeImage">
+    </div>
+    <div id="couponbook">
+      <img src="images/books.svg" id="couponbookImage">
+    </div>
+  </div>
   <div class="content">
     <div class="title"></div>
-    <form class="postForm">
-      <label for="title">Edit Promotion Title</label>
-      <input type="text" id="title">
+    <div class="postForm">
+      <label for="promoTitle">Edit Promotion Title</label>
+      <input type="text" id="promoTitle">
 
       <label for="discription">Edit Promotion Discription</label>
-      <textarea id="textArea"></textarea>
+      <textarea id="discription"></textarea>
 
       <label for="startDate">Edit Start Date</label>
       <input type="date" id="startDate">
@@ -43,9 +58,10 @@
       <label for="endDate">Edit End Date</label>
       <input type="date" id="endDate">
 
-      <input type="submit" value="edit" id="btn">
-    </form>
+      <button id="btn">save</button>
+    </div>
   </div>
 </body>
+<script src="main.js"></script>
 
 </html>
