@@ -2,6 +2,8 @@ var ref = database.ref("businesses");
 
 ref.on("value", refData);
 
+
+
 function refData(data) {
 
   $(".content").remove();
@@ -10,6 +12,7 @@ function refData(data) {
 
   var businesses = data.val();
   var dosTacos = businesses["Dos Tacos"]["Coupons"];
+
   var keys = Object.keys(dosTacos);
 
   for (var i = 0; i < keys.length; i++) {
@@ -41,20 +44,36 @@ function refData(data) {
     var dlt = $('<button/>').addClass('delete').html('<p>Delete</p>');
     outer.append(dlt);
 
-    
-   
+    var edit = $('<button/>').addClass('edit').html('<p>Edit</p>');
+    outer.append(edit);
 
     $(".content").append(outer);
+  }
+
+  var deleteBtn = $("button.delete");
+  for (var i = 0; i < deleteBtn.length; i++) {
+    deleteBtn[i].addEventListener('click', pressDelete)
+  }
+
+  var editBtn = $("button.edit");
+  for (var i = 0; i < editBtn.length; i++) {
+    editBtn[i].addEventListener('click', pressEdit)
   }
 }
 
 var goHome = document.getElementById("menuImage");
-goHome.addEventListener("click", function() {
+goHome.addEventListener("click", function () {
   window.location.href = "../Create Post/index.html";
 })
 
+function pressDelete(x) {
+  var dosTacos = database.ref("businesses/Dos Tacos/Coupons");
+  console.log(database.ref("businesses/Dos Tacos/Coupons"));
+  var id = x.target.parentElement.getAttribute('id');
+  dosTacos.child(id).remove();
+}
 
-var testvar = document.getElementsByClassName("delete");
-console.log(testvar);
-console.log(testvar[0]);
-console.log(testvar[1]);
+function pressEdit(x){
+  
+}
+  
