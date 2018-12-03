@@ -2,24 +2,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background: url("images/backgroundimage.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .content{
   width: 700px;
-  margin: auto;
+  margin: 0 auto;
   background-color: white;
+  overflow-y: scroll;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #005073;
 }
 
 .ad{
   border-radius: 10px;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 80px;
   width: 80%;
   height: 300px;
   border: 2px solid #005073;
 }
-
-
 
 .title{
   display: table-cell;
@@ -70,7 +74,9 @@ body {
 
 .endDate{
   float: right;
+  transform: translateX(20px) translateY(-37px);
 }
+
 #menu {
   float: left;
   width: 3%;
@@ -149,7 +155,7 @@ body {
 }
 
 .top{
-  height: 100px;
+  height: 70px;
 }
 
 .delete{
@@ -160,8 +166,9 @@ body {
   padding: .5rem;
   margin-bottom: 5rem;
   color: white;
-  margin: 1rem 0;
-  width: auto;
+  width: 100px;
+  float: right;
+  transform: translateX(-115px) translateY(170px);
 }
 
 .edit{
@@ -172,6 +179,15 @@ body {
   padding: .5rem;
   margin-bottom: 5rem;
   color: white;
-  margin: 1rem 0;
-  width: auto;
+  width: 100px;
+  float: right;
+  transform: translateX(-260px) translateY(170px);
+}
+
+.current {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  transform: translateY(20px);
 }

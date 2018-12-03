@@ -15,6 +15,9 @@ function refData(data) {
 
   var keys = Object.keys(dosTacos);
 
+  var current = $('<div/>').addClass('current').html('<p>Current Advertisements</p>');
+  $(newBodyEl).append(current);
+
   for (var i = 0; i < keys.length; i++) {
     var k = keys[i];
 
@@ -42,10 +45,10 @@ function refData(data) {
     outer.append(dates);
 
     var dlt = $('<button/>').addClass('delete').html('<p>Delete</p>');
-    outer.append(dlt);
+    dis.append(dlt);
 
     var edit = $('<button/>').addClass('edit').html('<p>Edit</p>');
-    outer.append(edit);
+    dis.append(edit);
 
     $(".content").append(outer);
   }

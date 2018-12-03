@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("images/backgroundimage.jpg");
+    background-size: cover;
+  }
+
+#menu {
+    float: left;
+    width: 3%;
+  }
+  
+  #menuImage {
+    width: 40px;
+    height: 40px;
+  }
+  
+  #searchlogo {
+    float: left;
+    width: 40%
+  }
+  
+  #searchImage {
+    margin-bottom: 5px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    transform: translateY(-7px) translateX(-6px);
+  }
+  
+  #logo {
+    float: left;
+    width: 3%;
+  }
+  
+  #logoImage {
+    width: 40px;
+    height: 40px;
+  }
+  
+  #home {
+    float: left;
+    width: 3.5%
+  }
+  
+  #homeImage {
+    width: 35px;
+    height: 35px;
+  }
+  
+  #couponbook {
+    float: left;
+    width: 3%;
+  }
+  
+  #couponbookImage {
+    width: 33px;
+    height: 33px;
+  }
+  
+  #name {
+    float: left;
+    width: 46%;
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 15px;
+  }
+
+.welcome {
+      float: left;
+  }
+
+ .text {
+      float: left;
+  }
+
+  #textHeading, #welcomeHeading {
+    float: left;
+  }
