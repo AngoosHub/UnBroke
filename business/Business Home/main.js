@@ -71,7 +71,7 @@ goHome.addEventListener("click", function () {
 
 function pressDelete(x) {
   var dosTacos = database.ref("businesses/Dos Tacos/Coupons");
-  var id = x.target.parentElement.getAttribute('id');
+  var id = x.target.parentElement.parentElement.getAttribute('id');
   dosTacos.child(id).remove();
 }
 
