@@ -14,26 +14,27 @@ function submitForm(form) {
   var fileName = selectedFile.name;
   var storageRef = firebase.storage().ref('/images/' + fileName);
   var uploadTask = storageRef.put(selectedFile);
-
-  var data = {
-    Name: title,
-    Deal: dis,
-    End_Date: endDate,
-    Start_Date: startDate
-  }
+  
 
   uploadTask.snapshot.ref.getDownloadURL().then(function (downloadURL) {
-    data["url"] = downloadURL;
-    console.log(downloadURL);
+    var data = {
+      Name: title,
+      Deal: dis,
+      End_Date: endDate,
+      Start_Date: startDate,
+      url: downloadURL
+    }
+    
+  console.log(data);
+
+  
+  var ref = database.ref('businesses/Dos Tacos/Coupons');
+  ref.push(data);
+  window.location.href = "../Business home/index.html";
   });
 
 
-  console.log(data);
 
 
 
-  var ref = database.ref('businesses/Dos Tacos/Coupons');
-  ref.push(data);
-
-  //window.location.href = "../Business home/index.html";
 }
