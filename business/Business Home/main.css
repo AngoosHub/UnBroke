@@ -52,19 +52,20 @@ body {
 .discription>p{
   padding-top: 20px;
   margin: auto;
-  width: 90%;
+  width: 50%;
+  float: left;
+  height: 90%;
 }
 
 .dates{
   margin: auto;
   height: 25%;
-  width: 90%;
 }
 
 .dates>div{
   text-align: center;
   height: 95%;
-  width: 49.8%;
+  width: 50%;
 }
 
 .startDate{
@@ -73,8 +74,7 @@ body {
 }
 
 .endDate{
-  float: right;
-  transform: translateX(20px) translateY(-37px);
+  float: left;
 }
 
 #menu {
@@ -141,15 +141,12 @@ body {
 
 .dates>div>p.contentDate{
   width: 100%;
-  margin: 0;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .dates>div>p.dateTitle{
   color: #107dac;
-  margin: 0;
-  margin-top: 10px;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -168,7 +165,7 @@ body {
   color: white;
   width: 100px;
   float: right;
-  transform: translateX(-115px) translateY(340px);
+  margin-right: 35px;
 }
 
 .edit{
@@ -181,7 +178,6 @@ body {
   color: white;
   width: 100px;
   float: right;
-  transform: translateX(-260px) translateY(340px);
 }
 
 .current {
@@ -190,4 +186,14 @@ body {
   text-align: center;
   margin: 0 auto;
   transform: translateY(20px);
+}
+
+.imageDiv {
+  border-radius: 2px;
+  border-style: solid;
+  width: 250px;
+  height: 210px;
+  float: right;
+  margin-bottom: 10px;
+  margin-right: 10px;
 }
