@@ -45,22 +45,25 @@
   </div>
   <div class="content">
     <div class="title"></div>
-    <div class="postForm">
+    <form class="postForm">
       <label for="promoTitle">Promotion Title</label>
-      <input type="text" id="promoTitle">
+      <input type="text" name="promoTitle" id="promoTitle">
 
       <label for="discription">Promotion Discription</label>
-      <textarea id="discription"></textarea>
+      <textarea name="discription" id="discription"></textarea>
 
       <label for="startDate">Start Date</label>
-      <input type="date" id="startDate">
+      <input type="date" name="startDate" id="startDate">
 
       <label for="endDate">End Date</label>
-      <input type="date" id="endDate">
+      <input type="date" name="endDate" id="endDate">
 
-      <button id="btn">post</button>
-    </div>
+      <input type="file" name="uploadF" id="file" class="upload-file">
+
+      <input type="button" name="button" id="btn" value="post" onClick="submitForm(this.form)">
+    </form>
   </div>
+   
 </body>
 <script src="main.js"></script>
 

@@ -1,12 +1,19 @@
+$("#file").on("change", function (event) {
+  selectedFile = event.target.files[0];
+});
 
-var btnpress = document.getElementById("btn");
-btnpress.addEventListener("click", function(){
-  var title = document.getElementById("promoTitle").value;
-  var dis = document.getElementById("discription").value;
-  var startDate = document.getElementById("startDate").value;
-  var endDate = document.getElementById("endDate").value;
 
-  var ref = database.ref('businesses/Dos Tacos/Coupons');
+
+function submitForm(form) {
+  console.log("works");
+  var title = form.promoTitle.value;
+  var dis = form.discription.value;
+  var startDate = form.startDate.value;
+  var endDate = form.endDate.value;
+
+  var fileName = selectedFile.name;
+  var storageRef = firebase.storage().ref('/images/' + fileName);
+  var uploadTask = storageRef.put(selectedFile);
 
   var data = {
     Name: title,
@@ -15,11 +22,18 @@ btnpress.addEventListener("click", function(){
     Start_Date: startDate
   }
 
-  ref.push(data);
-  window.location.href = "../Business home/index.html";
-});
+  uploadTask.snapshot.ref.getDownloadURL().then(function (downloadURL) {
+    data["url"] = downloadURL;
+    console.log(downloadURL);
+  });
 
-var goHome = document.getElementById("homeImage");
-goHome.addEventListener("click", function() {
-  window.location.href = "../Business home/index.html";
-})
+
+  console.log(data);
+
+
+
+  var ref = database.ref('businesses/Dos Tacos/Coupons');
+  ref.push(data);
+
+  //window.location.href = "../Business home/index.html";
+}
