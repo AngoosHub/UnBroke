@@ -1,21 +1,27 @@
-.postForm {
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("images/backgroundimage.jpg");
+  background-size: cover;
+}
+
+.postForm{
   border-radius: 10px;
   max-width: 700px;
   margin: 2rem auto;
   border: 2px solid #1ebbd7;
   padding: 2rem;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
 }
 
-.postForm>label {
+.postForm>label{
   text-transform: uppercase;
   display: block;
   font-size: 14px;
   padding: 1rem 0 .25rem;
 }
 
-.postForm>input,
-textarea {
+.postForm>input, textarea{
   border-radius: 10px;
   display: block;
   width: 100%;
@@ -24,7 +30,7 @@ textarea {
   padding: .5rem;
 }
 
-#btn {
+#btn{
   border-radius: 10px;
   text-transform: uppercase;
   border: 0;
@@ -35,9 +41,8 @@ textarea {
   width: auto;
 }
 
-#btn:hover {
+#btn:hover{
   background: #107dac;
-  
 }
 
 #menu {
