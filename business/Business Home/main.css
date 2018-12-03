@@ -151,3 +151,27 @@ body {
 .top{
   height: 100px;
 }
+
+.delete{
+  border-radius: 10px;
+  text-transform: uppercase;
+  border: 0;
+  background: #005073;
+  padding: .5rem;
+  margin-bottom: 5rem;
+  color: white;
+  margin: 1rem 0;
+  width: auto;
+}
+
+.edit{
+  border-radius: 10px;
+  text-transform: uppercase;
+  border: 0;
+  background: #005073;
+  padding: .5rem;
+  margin-bottom: 5rem;
+  color: white;
+  margin: 1rem 0;
+  width: auto;
+}

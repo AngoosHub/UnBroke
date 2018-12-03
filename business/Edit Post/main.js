@@ -1,23 +1,19 @@
 
 var btnpress = document.getElementById("btn");
 
-var dosTacos = database.ref("businesses/Dos Tacos/Coupons");
-var editId = database.ref('businesses/current');
-var idnew = editId["id"];
-console.log(dosTacos);
-console.log(editId);
-console.log(idnew);
+var ref = database.ref('businesses');
+ref.on('value', function (data){
+  var businesses = data.val();
+  var id = businesses["current"]["id"];
+  var currentAd = database.ref('businesses/Dos Tacos/Coupons/' + id);
+  console.log(currentAd);
+  console.log(id);
 
 btnpress.addEventListener("click", function(){
   var title = document.getElementById("promoTitle").value;
-  document.getElementById("promoTitle").value = "";
   var dis = document.getElementById("discription").value;
-  document.getElementById("discription").value = "";
   var startDate = document.getElementById("startDate").value;
-  document.getElementById("startDate").value = "";
   var endDate = document.getElementById("endDate").value;
-  document.getElementById("endDate").value = "";
-
 
   var data = {
     Name: title,
@@ -25,8 +21,8 @@ btnpress.addEventListener("click", function(){
     End_Date: endDate,
     Start_Date: startDate
   }
-
-  ref.update(data);
+  currentAd.set(data);
+  window.location.href = "../Business home/index.html";
 });
 
 var goHome = document.getElementById("homeImage");
@@ -37,4 +33,5 @@ goHome.addEventListener("click", function() {
 var postNew = document.getElementById("menuImage");
 postNew.addEventListener("click", function() {
   window.location.href = "../Create Post/index.html";
+})
 })
