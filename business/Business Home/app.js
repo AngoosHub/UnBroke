@@ -15,7 +15,7 @@ function refData(data) {
   for (var i = 0; i < keys.length; i++) {
     var k = keys[i];
 
-    var outer = $("<div/>").addClass("ad");
+    var outer = $("<div/>").addClass("ad").attr('id', k);
 
     var title = $("<div/>").addClass("title").html("<p>" + dosTacos[k]["Name"] + "</p>");
     outer.append(title);
@@ -36,8 +36,13 @@ function refData(data) {
     var p4 = $("<p/>").addClass("contentDate").html(dosTacos[k]["End_Date"]);
     start.append(p3).append(p4);
     dates.append(start);
-
     outer.append(dates);
+
+    var dlt = $('<button/>').addClass('delete').html('<p>Delete</p>');
+    outer.append(dlt);
+
+    
+   
 
     $(".content").append(outer);
   }
@@ -47,3 +52,9 @@ var goHome = document.getElementById("menuImage");
 goHome.addEventListener("click", function() {
   window.location.href = "../Create Post/index.html";
 })
+
+
+var testvar = document.getElementsByClassName("delete");
+console.log(testvar);
+console.log(testvar[0]);
+console.log(testvar[1]);
