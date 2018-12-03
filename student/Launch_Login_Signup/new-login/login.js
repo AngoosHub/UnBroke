@@ -27,7 +27,6 @@ button.onclick = function () {
 }
 
 button2.onclick = function () {
-    console.log("OH YE BOI");
     document.getElementsByClassName("business-login")[0].classList.add("animate-out");
     setTimeout(function () {
         document.getElementsByClassName("business-login")[0].setAttribute("id", "is-showing");

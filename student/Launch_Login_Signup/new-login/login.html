@@ -9,13 +9,15 @@
     <link href="login.css" rel="stylesheet">
 
     <!-- <script defer src="/__/firebase/5.6.0/firebase-app.js"></script>
-    <script defer src="/__/firebase/5.6.0/firebase-auth.js"></script>
     <script defer src="/__/firebase/5.6.0/firebase-firestore.js"></script>
     <script defer src="/__/firebase/init.js"></script> -->
-
+    <script src="/__/firebase/5.5.8/firebase-app.js"></script>
+    <script src="/__/firebase/5.5.8/firebase-auth.js"></script>
+    <script src="/__/firebase/init.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+
     <script>
         // Initialize Firebase
         var defaultAppConfig = {
@@ -52,11 +54,14 @@
                             <input class="txtEmail" type="text" name="" placeholder="Your Email" required>
                             <input class="txtPassword" type="password" name="" placeholder="Your Password" required>
                             <input class="txtLogin" type="submit" name="" value="Login">
+                            <input class="txtSignUp" type="submit" name="" value="SignUp">
                         </form>
                     </div>
                     <div class="login-gmail">
                         <img class="gmail" src="images/gmail.png" alt="gamil">
                     </div>
+                    <div id="firebaseui-auth-container"></div>
+                    <div id="loader">Loading...</div>
                     <div class="change-login" id="change-login1">
                         <h1>To Business Login<img class="arrow" src="images/arrow.png" alt="arrow"></h1>
                     </div>
@@ -75,7 +80,7 @@
                             <input class="txtLogin" type="submit" name="" value="Login">
                         </form>
                     </div>
-                    <div class="login-gmail" onclick="googleLogin()">
+                    <div class="login-gmail">
                         <img class="gmail" src="images/gmail.png" alt="gamil">
                     </div>
                     <div class="change-login" id="change-login2">
@@ -85,7 +90,6 @@
             </div>
 
         </div>
-
 
 
 
