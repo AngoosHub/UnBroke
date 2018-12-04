@@ -20,7 +20,8 @@ body {
   background-color: #d6ecf5;
   border-radius: 10px;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   width: 80%;
   height: 469px;
   border: 2px solid #005073;
@@ -173,7 +174,6 @@ body {
   font-weight: bold;
   text-align: center;
   margin: 0 auto;
-  transform: translateY(20px);
 }
 
 .imageDiv {
