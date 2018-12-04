@@ -16,7 +16,7 @@ function refData(data) {
 
   var keys = Object.keys(coupons);
 
-  var current = $('<div/>').addClass('current').html('<p>Current Advertisements</p>');
+  var current = $('<div/>').addClass('current').html('<p>My Coupons</p>');
   $(newBodyEl).append(current);
 
   for (var i = 0; i < keys.length; i++) {
@@ -30,8 +30,11 @@ function refData(data) {
     var dis = $("<div/>").addClass("discription").html("<p>" + coupons[k]["Deal"] + "</p>");
     outer.append(dis);
 
+    var image = $("<div/>").addClass("imageDiv").html('<img src="' + coupons[k]["url"] + '">');
+    dis.append(image);
+
     var QR = $("<div/>").addClass("QR").html('<img src="' + dosTacos["QR"] + '">');
-    outer.append(QR);
+    dis.append(QR);
 
     var dates = $("<div/>").addClass("dates");
 
@@ -48,9 +51,6 @@ function refData(data) {
     dates.append(start);
     outer.append(dates);
 
-    var image = $("<div/>").addClass("imageDiv").html('<img src="' + coupons[k]["url"] + '">');
-    dis.append(image);
-
     var dlt = $('<button/>').addClass('delete').html('<p>Print</p>');
     dis.append(dlt);
 
@@ -63,7 +63,7 @@ function refData(data) {
   var deleteBtn = $("button.delete");
   for (var i = 0; i < deleteBtn.length; i++) {
     deleteBtn[i].addEventListener('click', function() {
-        window.location.href = "couponbook.html";
+        window.print();
     })
   }
 
@@ -76,6 +76,16 @@ function refData(data) {
 var goHome = document.getElementById("menuImage");
 goHome.addEventListener("click", function () {
   window.location.href = "../Create Post/index.html";
+})
+
+var goHome = document.getElementById("menuImage");
+goHome.addEventListener("click", function () {
+  window.location.href = "../Create Post/index.html";
+})
+
+var signOut = document.getElementById("signOut");
+signOut.addEventListener("click", function () {
+  window.location.href = "../../student/Launch_Login_Signup/new-login/login.html";
 })
 
 function pressDelete(x) {

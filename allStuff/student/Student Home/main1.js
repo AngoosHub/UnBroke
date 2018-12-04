@@ -71,6 +71,11 @@ goHome.addEventListener("click", function () {
   window.location.href = "../Create Post/index.html";
 })
 
+var signOut = document.getElementById("signOut");
+signOut.addEventListener("click", function () {
+  window.location.href = "../../student/Launch_Login_Signup/new-login/login.html";
+})
+
 function pressDelete(x) {
   var coupons = database.ref("businesses/Dos Tacos/Coupons");
   var id = x.target.parentElement.parentElement.getAttribute('id');

@@ -7,6 +7,7 @@ body {
 }
 
 .content{
+  min-height: 50px;
   width: 700px;
   margin: 0 auto;
   background-color: rgb(200, 200, 200, 0.3);;
@@ -17,9 +18,11 @@ body {
 }
 
 .ad{
+  background-color: #c6eeffb7;
   border-radius: 10px;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   width: 80%;
   height: 469px;
   border: 2px solid #005073;
@@ -49,12 +52,22 @@ body {
   border-top: 2px solid #005073;
 }
 
+.cuisine>p, .distance>p, .discription>p, .price>p, .reviews>p {
+  padding-top: 5px;
+  margin: auto;
+  width: 50%;
+  float: left;
+  height: 30%;
+  font-size: 22px;
+}
+
+
 .discription>p{
   padding-top: 20px;
   margin: auto;
   width: 50%;
   float: left;
-  height: 90%;
+  height: 30%;
 }
 
 .dates{
@@ -77,30 +90,23 @@ body {
 
 #menu {
   float: left;
-  width: 3%;
+  width: 10%;
 }
 
 #menuImage {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 
-#searchlogo {
-  float: left;
-  width: 40%
-}
-
-#searchImage {
-  margin-bottom: 5px;
-  float: left;
-  width: 60px;
-  height: 60px;
-  transform: translateY(-7px) translateX(-6px);
+#menuImage:hover{
+  width: 36px;
+  height: 36px;
 }
 
 #logo {
+  margin-left: auto;
   float: left;
-  width: 3%;
+  width: 40px;
 }
 
 #logoImage {
@@ -108,32 +114,39 @@ body {
   height: 40px;
 }
 
+
+#name {
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-right: auto;
+}
+
+.shell{
+  width: 200px;
+  margin: auto;
+}
+
+.logoWrapper{
+  float: left;
+  width: 80%;
+}
+
 #home {
   float: left;
-  width: 3.5%
+  width: 10%;
 }
 
 #homeImage {
+  float: right;
   width: 35px;
   height: 35px;
 }
 
-#couponbook {
-  float: left;
-  width: 3%;
-}
 
-#couponbookImage {
-  width: 33px;
-  height: 33px;
-}
 
-#name {
-  float: left;
-  width: 46%;
-  font-size: 35px;
-  font-weight: bold;
-  margin-left: 15px;
+.top{
+  height: 100px;
 }
 
 
@@ -149,31 +162,37 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.top{
-  height: 70px;
-}
-
 .delete{
+  margin-left: 2px;
   border-radius: 10px;
   text-transform: uppercase;
   border: 0;
   background: #005073;
-  padding: .5rem;
   color: white;
   width: 100px;
+  height: 30px;
   float: right;
   margin-right: 35px;
 }
 
+.delete:hover{
+  background: #107dac;
+}
+
 .edit{
+  margin-right: 2px;
   border-radius: 10px;
   text-transform: uppercase;
   border: 0;
   background: #005073;
-  padding: .5rem;
   color: white;
   width: 100px;
+  height: 30px;
   float: right;
+}
+
+.edit:hover{
+  background: #107dac;
 }
 
 .current {
@@ -181,7 +200,6 @@ body {
   font-weight: bold;
   text-align: center;
   margin: 0 auto;
-  transform: translateY(20px);
 }
 
 .imageDiv {
@@ -192,4 +210,38 @@ body {
   float: right;
   margin-bottom: 10px;
   margin-right: 10px;
+  margin-top: 10px;
+}
+
+.imageDiv>img{
+  width: 250px;
+  height: 210px;
+}
+
+#signOut{
+  float: right;
+  height: 35px;
+  width: 35px;
+}
+
+#signOut:hover{
+  width: 36px;
+  height: 36px;
+}
+
+.QR {
+  border-radius: 2px;
+  border-style: solid;
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-bottom: 10px;
+  margin-right:10px;
+  margin-top: 10px;
+  
+}
+
+.QR>img{
+  width: 150px;
+  height: 150px;
 }

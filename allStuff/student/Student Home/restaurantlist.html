@@ -1,43 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html>
+
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Restaurant List</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="restaurantlist.css" />
+  <title>Res</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="studenthome.css">
+  <script src="https://www.gstatic.com/firebasejs/5.6.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAYRdnbgHwRE4-G_IRb9wMGtphywixvwbg",
+      authDomain: "unbroke-30d50.firebaseapp.com",
+      databaseURL: "https://unbroke-30d50.firebaseio.com",
+      projectId: "unbroke-30d50",
+      storageBucket: "unbroke-30d50.appspot.com",
+      messagingSenderId: "139539380058"
+    };
+    firebase.initializeApp(config);
+    var database = firebase.database();
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
+
 <body>
-    <div class="nav">
-        <div id="address">
-            <p id="addressText">BCIT Willingdon Ave 3700</p>
-        </div>
-        <div id="search">
-            <img src="searchIcon.png" id="searchIcon">
-        </div>
+  <div class="top">
+    <div id="menu">
+      <img src="images/plus.png" id="menuImage">
     </div>
-    <div class="main">
-        <div id="chipotle">
-            <p id="chiptoleName">Chiptole</p>
-            <p id="chiptoleDistance">1.2km</p>
-            <img src="chiptole2.png" id="chiptoleimg">
+    <div class="logoWrapper">
+      <div class="shell">
+        <div id="logo">
+          <img src="images/logo.svg" id="logoImage">
         </div>
-        <div id="dos">
-            <p id="dosName">Dos Tacos</p>
-            <p id="dosDistance">1.3km</p>
-            <img src="dostacos.jpg" id="dostacosimg">
-        </div>
+        <div id="name">UnBroke</div>
+      </div>
     </div>
-    <div class="menu">
-        <div id="home">
-            <p id="homeText">Home</p>
-        </div>
-        <div id="liked">
-            <p id="likedText">Liked</p>
-        </div>
-        <div id="coupon">
-            <p id="couponText">Coupon Book</p>
-        </div>
+    <div id="home">
+        <img src="images/signout.png" id="signOut">
     </div>
+  </div>
 </body>
+<script src="main1.js"></script>
+
 </html>

@@ -9,14 +9,13 @@ function refData(data) {
   $(".content").remove();
   var newBodyEl = $("<div/>").addClass("content");
   $("body").append(newBodyEl);
+  var current = $('<div/>').addClass('current').html('<p>Current Advertisements</p>');
+  $(newBodyEl).append(current);
 
   var businesses = data.val();
   var dosTacos = businesses["Dos Tacos"]["Coupons"];
 
   var keys = Object.keys(dosTacos);
-
-  var current = $('<div/>').addClass('current').html('<p>Current Advertisements</p>');
-  $(newBodyEl).append(current);
 
   for (var i = 0; i < keys.length; i++) {
     var k = keys[i];
@@ -47,10 +46,10 @@ function refData(data) {
     var image = $("<div/>").addClass("imageDiv").html('<img src="' + dosTacos[k]["url"] + '">');
     dis.append(image);
 
-    var dlt = $('<button/>').addClass('delete').html('<p>Add to Coupon</p>');
+    var dlt = $('<button/>').addClass('delete').html('Add to Book');
     dis.append(dlt);
 
-    var edit = $('<button/>').addClass('edit').html('<p>Edit</p>');
+    var edit = $('<button/>').addClass('edit').html('Edit');
     dis.append(edit);
 
     $(".content").append(outer);
@@ -59,7 +58,7 @@ function refData(data) {
   var deleteBtn = $("button.delete");
   for (var i = 0; i < deleteBtn.length; i++) {
     deleteBtn[i].addEventListener('click', function() {
-        window.location.href = "couponbook.html";
+      window.location.href = "couponbook.html";
     })
   }
 
@@ -72,6 +71,11 @@ function refData(data) {
 var goHome = document.getElementById("menuImage");
 goHome.addEventListener("click", function () {
   window.location.href = "../Create Post/index.html";
+})
+
+var signOut = document.getElementById("signOut");
+signOut.addEventListener("click", function () {
+  window.location.href = "../../student/Launch_Login_Signup/new-login/login.html";
 })
 
 function pressDelete(x) {
