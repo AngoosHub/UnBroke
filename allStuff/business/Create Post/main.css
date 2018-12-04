@@ -97,6 +97,11 @@ body {
   height: 35px;
 }
 
+#homeImage:hover{
+  width: 36px;
+  height: 36px;
+}
+
 .top{
   height: 100px;
 }

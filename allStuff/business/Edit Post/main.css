@@ -58,6 +58,11 @@ body {
   height: 35px;
 }
 
+#menuImage:hover{
+  width: 36px;
+  height: 36px;
+}
+
 #logo {
   margin-left: auto;
   float: left;
@@ -96,6 +101,11 @@ body {
   float: left;
   width: 35px;
   height: 35px;
+}
+
+#homeImage:hover{
+  width: 36px;
+  height: 36px;
 }
 
 .top{

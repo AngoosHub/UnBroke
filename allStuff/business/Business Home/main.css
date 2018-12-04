@@ -88,6 +88,11 @@ body {
   height: 35px;
 }
 
+#menuImage:hover{
+  width: 36px;
+  height: 36px;
+}
+
 #logo {
   margin-left: auto;
   float: left;
@@ -128,6 +133,8 @@ body {
   height: 35px;
 }
 
+
+
 .top{
   height: 100px;
 }
@@ -158,6 +165,10 @@ body {
   margin-right: 35px;
 }
 
+.delete:hover{
+  background: #107dac;
+}
+
 .edit{
   margin-right: 2px;
   border-radius: 10px;
@@ -168,6 +179,10 @@ body {
   width: 100px;
   height: 30px;
   float: right;
+}
+
+.edit:hover{
+  background: #107dac;
 }
 
 .current {
@@ -197,4 +212,9 @@ body {
   float: right;
   height: 35px;
   width: 35px;
+}
+
+#signOut:hover{
+  width: 36px;
+  height: 36px;
 }
