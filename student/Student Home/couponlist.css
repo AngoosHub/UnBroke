@@ -9,7 +9,7 @@ body {
   .content{
     width: 700px;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgb(200, 200, 200, 0.3);
     overflow-y: auto;
     border-radius: 2px;
     border-style: solid;
