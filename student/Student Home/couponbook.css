@@ -1,405 +1,195 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: url("images/backgroundimage.jpg");
-    background-size: cover;
-  }
-  
-  .content{
-    width: 700px;
-    margin: auto;
-    background-color: white;
-  }
-  
-  .ad{
-    border-radius: 10px;
-    margin: auto;
-    margin-top: 20px;
-    width: 80%;
-    height: 300px;
-    border: 2px solid #005073;
-  }
-  
-  
-  
-  .title{
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    margin: auto;
-    height: 75px;
-    width: 560px;
-  }
-  
-  .title>p{
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .discription{
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
-    height: 150px;
-    width: 560px;
-    border-bottom: 2px solid #005073;
-    border-top: 2px solid #005073;
-  }
-  
-  .discription>p{
-    padding-top: 20px;
-    margin: auto;
-    width: 90%;
-  }
-  
-  .dates{
-    margin: auto;
-    height: 25%;
-    width: 90%;
-  }
-  
-  .dates>div{
-    text-align: center;
-    height: 95%;
-    width: 49.8%;
-  }
-  
-  .startDate{
-    float: left;
-    border-right: 2px solid #005073;
-  }
-  
-  .endDate{
-    float: right;
-  }
-  #menu {
-    float: left;
-    width: 3%;
-  }
-  
-  #menuImage {
-    width: 40px;
-    height: 40px;
-  }
-  
-  #searchlogo {
-    float: left;
-    width: 40%
-  }
-  
-  #searchImage {
-    margin-bottom: 5px;
-    float: left;
-    width: 60px;
-    height: 60px;
-    transform: translateY(-7px) translateX(-6px);
-  }
-  
-  #logo {
-    float: left;
-    width: 3%;
-  }
-  
-  #logoImage {
-    width: 40px;
-    height: 40px;
-  }
-  
-  #home {
-    float: left;
-    width: 3.5%
-  }
-  
-  #homeImage {
-    width: 35px;
-    height: 35px;
-  }
-  
-  #couponbook {
-    float: left;
-    width: 3%;
-  }
-  
-  #couponbookImage {
-    width: 33px;
-    height: 33px;
-  }
-  
-  #name {
-    float: left;
-    width: 46%;
-    font-size: 35px;
-    font-weight: bold;
-    margin-left: 15px;
-  }
-  
-  
-  .dates>div>p.contentDate{
-    width: 100%;
-    margin: 0;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .dates>div>p.dateTitle{
-    color: #107dac;
-    margin: 0;
-    margin-top: 10px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .top{
-    height: 100px;
-  }
+  font-family: Arial, Helvetica, sans-serif;
+  background: url("images/backgroundimage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
+.content{
+  width: 700px;
+  margin: 0 auto;
+  background-color: white;
+  overflow-y: auto;
+  border-radius: 2px;
+  border-style: solid;
+  border-color: #005073;
+}
 
-/* body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: url("backgroundimage.jpg");
-    background-size: cover;
+.ad{
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 80px;
+  width: 80%;
+  height: 469px;
+  border: 2px solid #005073;
+}
+
+.title{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+  height: 75px;
+  width: 550px;
+}
+
+.title>p{
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.discription{
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  height: 280px;
+  width: 550px;
+  border-bottom: 2px solid #005073;
+  border-top: 2px solid #005073;
+}
+
+.discription>p{
+  padding-top: 20px;
+  margin: auto;
+  width: 50%;
+  float: left;
+  height: 90%;
+}
+
+.dates{
+  margin: auto;
+}
+
+.dates>div{
+  text-align: center;
+  width: 48%;
+}
+
+.startDate{
+  border-right: 2px solid #005073;
+  float: left;
+}
+
+.endDate { 
+  float: right;
 }
 
 #menu {
-    float: left;
-    width: 3%;
+  float: left;
+  width: 3%;
 }
 
 #menuImage {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 #searchlogo {
-    float: left;
-    width: 39.5%
+  float: left;
+  width: 40%
 }
 
 #searchImage {
-    margin-bottom: 5px;
-    float: left;
-    width: 60px;
-    height: 60px;
-    transform: translateY(-7px) translateX(-6px);
+  margin-bottom: 5px;
+  float: left;
+  width: 60px;
+  height: 60px;
+  transform: translateY(-7px) translateX(-6px);
 }
 
 #logo {
-    float: left;
-    width: 3%;
+  float: left;
+  width: 3%;
 }
 
 #logoImage {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 #home {
-    float: left;
-    width: 3.5%
+  float: left;
+  width: 3.5%
 }
 
 #homeImage {
-    width: 35px;
-    height: 35px;
+  width: 35px;
+  height: 35px;
 }
 
 #couponbook {
-    float: left;
-    width: 3%;
+  float: left;
+  width: 3%;
 }
 
 #couponbookImage {
-    width: 33px;
-    height: 33px;
+  width: 33px;
+  height: 33px;
 }
 
 #name {
-    float: left;
-    width: 46%;
-    font-size: 35px;
-    font-weight: bold;
-    margin-left: 15px;
+  float: left;
+  width: 46%;
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 15px;
 }
 
-.topBar {
-    height: 80px;
+
+.dates>div>p.contentDate{
+  width: 100%;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-    width: 700px;
-    height: 580px;
-    margin: auto;
-    border-radius: 2px;
-    border-style: solid;
-    overflow-y: scroll;
-    background-color: white;
-}   
-
-#couponbooktitle {
-    text-align: center;
-    font-weight: bold;
-    margin: 15px auto;
-    font-size: 25px;
+.dates>div>p.dateTitle{
+  color: #107dac;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-#printButton {
-    border-radius: 10px;
-    text-transform: uppercase;
-    border: 0;
-    background: #005073;
-    padding: .5rem;
-    color: white;
-    margin: auto;
-    width: 70px;
-    transform: translateY(10px) translateX(245px);
-}
-      
-#btn:hover{
-    background: #107dac;
+.top{
+  height: 70px;
 }
 
-.content, .content2 {
-    width: 700px;
-    margin: 20px auto;
-    background-color: white;
-  } 
-  
-  .ad, .ad2 {
-    border-radius: 10px;
-    margin: auto;
-    width: 80%;
-    height: 300px;
-    border: 2px solid #005073;
-  }
-  
-  
-  
-  .title, .title2 {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    margin: auto;
-    height: 75px;
-    width: 560px;
-  }
-  
-  .title>p, .title2>p{
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .discription, .discription2 {
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: auto;
-    height: 150px;
-    width: 560px;
-    border-bottom: 2px solid #005073;
-    border-top: 2px solid #005073;
-  }
-  
-  .discription>p, .discription2>p {
-    padding-top: 20px;
-    margin: auto;
-    width: 90%;
-  }
-  
-  .dates, .dates2 {
-    margin: auto;
-    height: 25%;
-    width: 90%;
-  }
-  
-  .dates>div, .dates2>div {
-    text-align: center;
-    height: 95%;
-    width: 49.8%;
-  }
-  
-  .startDate, .startDate2 {
-    float: left;
-    border-right: 2px solid #005073;
-  }
-  
-  .endDate, .endDate2 {
-    float: right;
-  }
-  #menu {
-    float: left;
-    width: 3%;
-  }
-  
-  #menuImage {
-    width: 40px;
-    height: 40px;
-  }
-  
-  #searchlogo {
-    float: left;
-    width: 40%
-  }
-  
-  #searchImage {
-    margin-bottom: 5px;
-    float: left;
-    width: 60px;
-    height: 60px;
-    transform: translateY(-7px) translateX(-6px);
-  }
-  
-  #logo {
-    float: left;
-    width: 3%;
-  }
-  
-  #logoImage {
-    width: 40px;
-    height: 40px;
-  }
-  
-  #home {
-    float: left;
-    width: 3.5%
-  }
-  
-  #homeImage {
-    width: 35px;
-    height: 35px;
-  }
-  
-  #couponbook {
-    float: left;
-    width: 3%;
-  }
-  
-  #couponbookImage {
-    width: 33px;
-    height: 33px;
-  }
-  
-  #name {
-    float: left;
-    width: 46%;
-    font-size: 35px;
-    font-weight: bold;
-    margin-left: 15px;
-  }
-  
-  
-  .dates>div>p.content, .dates2>div>p.content2{
-    width: 100%;
-    margin: 0;
-    font-size: 18px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .dates>div>p.dateTitle, .dates2>div>p.dateTitle2{
-    color: #107dac;
-    margin: 0;
-    margin-top: 10px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .top{
-    height: 100px;
-  } */
+.delete{
+  border-radius: 10px;
+  text-transform: uppercase;
+  border: 0;
+  background: #005073;
+  padding: .5rem;
+  color: white;
+  width: 100px;
+  float: right;
+  margin-right: 35px;
+}
+
+.edit{
+  border-radius: 10px;
+  text-transform: uppercase;
+  border: 0;
+  background: #005073;
+  padding: .5rem;
+  color: white;
+  width: 100px;
+  float: right;
+}
+
+.current {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  transform: translateY(20px);
+}
+
+.imageDiv {
+  border-radius: 2px;
+  border-style: solid;
+  width: 250px;
+  height: 210px;
+  float: right;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
