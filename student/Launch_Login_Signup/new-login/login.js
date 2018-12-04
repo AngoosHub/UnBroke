@@ -6,6 +6,13 @@ var button2 = document.getElementById("change-login2");
 console.log(button2);
 
 
+// var test = document.getElementById("change-test");
+
+// test.addEventListener('click', e => {
+//     location.href="../../Student Home/studenthome.html";
+// });
+
+
 /* Flips the student login to the business login */
 button.onclick = function () {
 
@@ -38,6 +45,18 @@ button2.onclick = function () {
         }, 600);
     }, 600);
 }
+
+
+// Pulls out about page
+var about_page = document.getElementsByTagName("nav");
+
+about_page.onclick = function() {
+    
+}
+
+
+
+
 
 
 // NOT WORKING

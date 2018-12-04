@@ -1,5 +1,8 @@
 function setup() {
 
+    //Sorry for all the commented code trying to optimize login
+
+
     // Get a reference to the database service
     var database = firebase.database();
 
@@ -51,7 +54,7 @@ function setup() {
         const promise = auth.signInWithEmailAndPassword(email, pass);
         promise.catch(e => console.log(e.message));
         promise.then(function () {
-            window.location.href = "../../Student Home/studenthome.html";
+            location.href = "../../Student Home/studenthome.html";
         });
 
     });
@@ -78,11 +81,15 @@ function setup() {
         auth.createUserWithEmailAndPassword(email, pass)
 
             .then(function () {
+                alert("check1");
                 auth.signInWithEmailAndPassword(email, pass)
                     .then(function () {
-                        window.location.href = "../../Student Home/studenthome.html";
+                        alert("check2");
+                        location.href = "../../Student Home/studenthome.html";
+                        
                     })
                     .catch(e => console.log(e.message));
+
             })
             .catch(e => console.log(e.message));
 
@@ -94,22 +101,22 @@ function setup() {
         const pass = txtPassword[1].value;
         const auth = firebase.auth();
 
-        // Sign Up
-        auth.createUserWithEmailAndPassword(email, pass)
+        // // Sign Up new
+        // auth.createUserWithEmailAndPassword(email, pass)
 
-            .then(function () {
-                auth.signInWithEmailAndPassword(email, pass)
-                    .then(function () {
-                        window.location.href = "../../../business/Business Home/index.html";
-                    })
-                    .catch(e => console.log(e.message));
-            })
-            .catch(e => console.log(e.message));
+        //     .then(function () {
+        //         auth.signInWithEmailAndPassword(email, pass)
+        //             .then(function () {
+        //                 window.location.href = "../../../business/Business Home/index.html";
+        //             })
+        //             .catch(e => console.log(e.message));
+        //     })
+        //     .catch(e => console.log(e.message));
 
 
         // Old Sign Up Code
-        // const promise = auth.createUserWithEmailAndPassword(email, pass);
-        // promise.catch(e => console.log(e.message));
+        const promise = auth.createUserWithEmailAndPassword(email, pass);
+        promise.catch(e => console.log(e.message));
 
         // firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
         //     // Handle Errors here.
@@ -119,13 +126,18 @@ function setup() {
         //     console.log(errorMessage);
         // });
 
-        // promise.then(function () {
-        //     const promise1 = auth.signInWithEmailAndPassword(email, pass);
-        //     promise1.catch(e => console.log(e.message));
-        //     promise1.then(function () {
-        //         window.location.href = "../../../business/Business Home/index.html";
-        //     });
+        promise.then(function () {
+            const promise1 = auth.signInWithEmailAndPassword(email, pass);
+            promise1.catch(e => console.log(e.message));
+            promise1.then(function () {
+                window.location.href = "../../../business/Business Home/index.html";
+            });
+        });
+
+        // auth.signInWithEmailAndPassword(email, pass).then(function() {
+        //     location.href = "../../Student Home/studenthome.html";
         // });
+
 
     });
 
@@ -177,6 +189,7 @@ var uiConfig = {
 };
 
 ui.start('#firebaseui-auth-container', uiConfig);
+
 
 // // Initialize the FirebaseUI Widget using Firebase.
 // var ui1 = new firebaseui.auth.AuthUI(firebase.auth());

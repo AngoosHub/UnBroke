@@ -57,7 +57,7 @@ nav a:hover {
 
 .login-box {
     width: 320px;
-    height: 420px;
+    height: 500px;
     background: rgba(0, 0, 0, 0.9);
     color: white;
     margin: 100px auto;
@@ -105,9 +105,10 @@ nav a:hover {
     color: white;
     font-size: 18px;
     border-radius: 10px;
+    text-align: center;
 }
 
-.login-box input[type="submit"] {
+/* .login-box input[type="submit"] {
     border: none;
     outline: none;
     height: 40px;
@@ -115,9 +116,9 @@ nav a:hover {
     color: white;
     font-size: 18px;
     border-radius: 10px;
-}
+} */
 
-.login-box input[type="submit"]:hover {
+.login-box .submit:hover {
     cursor: pointer;
     background-color: #005073;
 }
@@ -214,3 +215,26 @@ nav a:hover {
     100% {transform: rotateY(0deg);}
 }
 
+.start-about-page {
+    animation-name: fate-out;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.end-about-page {
+    animation-name: fate-in;
+    animation-duration: 0.6s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
