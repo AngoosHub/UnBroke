@@ -5,34 +5,34 @@ function setup() {
 
     console.log(database);
 
-    var login_gmail = document.getElementsByClassName("login-gmail");
+    //var login_gmail = document.getElementsByClassName("login-gmail");
 
-    login_gmail[0].onclick = function googleLogin() {
-        console.log("YE BOI111")
-        const provider = new firebase.auth.GoogleAuthProvider();
-        firebase.auth().signInWithPopup(provider)
+    // login_gmail[0].onclick = function googleLogin() {
+    //     console.log("YE BOI111")
+    //     const provider = new firebase.auth.GoogleAuthProvider();
+    //     firebase.auth().signInWithPopup(provider)
 
-            .then(result => {
-                alert("Successful Login");
-                window.location.href = "../../Student Home/studenthome.html";
-            })
-            .catch(console.log)
+    //         .then(result => {
+    //             alert("Successful Login");
+    //             window.location.href = "../../Student Home/studenthome.html";
+    //         })
+    //         .catch(console.log)
 
-    }
+    // }
 
-    login_gmail[1].onclick = function googleLogin() {
-        console.log("YE BOI111")
-        const provider = new firebase.auth.GoogleAuthProvider();
-        firebase.auth().signInWithPopup(provider)
+    // login_gmail[1].onclick = function googleLogin() {
+    //     console.log("YE BOI111")
+    //     const provider = new firebase.auth.GoogleAuthProvider();
+    //     firebase.auth().signInWithPopup(provider)
 
-            .then(result => {
-                const user = result.user;
-                document.write(`Hello ${user.displayName}`);
-                console.log(user)
-            })
-            .catch(console.log)
+    //         .then(result => {
+    //             const user = result.user;
+    //             document.write(`Hello ${user.displayName}`);
+    //             console.log(user)
+    //         })
+    //         .catch(console.log)
 
-    }
+    // }
 
     // Get elements
     const txtEmail = document.getElementsByClassName('txtEmail');
@@ -178,38 +178,38 @@ var uiConfig = {
 
 ui.start('#firebaseui-auth-container', uiConfig);
 
-// Initialize the FirebaseUI Widget using Firebase.
-var ui1 = new firebaseui.auth.AuthUI(firebase.auth());
+// // Initialize the FirebaseUI Widget using Firebase.
+// var ui1 = new firebaseui.auth.AuthUI(firebase.auth());
 
-var uiConfig1 = {
-    callbacks: {
-        signInSuccessWithAuthResult: function (authResult, redirectUrl) {
-            // User successfully signed in.
-            // Return type determines whether we continue the redirect automatically
-            // or whether we leave that to developer to handle.
-            return true;
-        },
-        uiShown: function () {
-            // The widget is rendered.
-            // Hide the loader.
-            document.getElementById('loader1').style.display = 'none';
-        }
-    },
-    // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
-    signInFlow: 'popup',
-    signInSuccessUrl: '../../Student Home/studenthome.html',
-    signInOptions: [
-        // Leave the lines as is for the providers you want to offer your users.
-        firebase.auth.GoogleAuthProvider.PROVIDER_ID //,
-        // firebase.auth.FacebookAuthProvider.PROVIDER_ID,
-        // firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-        // firebase.auth.GithubAuthProvider.PROVIDER_ID,
-        // firebase.auth.EmailAuthProvider.PROVIDER_ID,
-        // firebase.auth.PhoneAuthProvider.PROVIDER_ID
-    ],
-};
+// var uiConfig1 = {
+//     callbacks: {
+//         signInSuccessWithAuthResult: function (authResult, redirectUrl) {
+//             // User successfully signed in.
+//             // Return type determines whether we continue the redirect automatically
+//             // or whether we leave that to developer to handle.
+//             return true;
+//         },
+//         uiShown: function () {
+//             // The widget is rendered.
+//             // Hide the loader.
+//             document.getElementById('loader1').style.display = 'none';
+//         }
+//     },
+//     // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
+//     signInFlow: 'popup',
+//     signInSuccessUrl: '../../Student Home/studenthome.html',
+//     signInOptions: [
+//         // Leave the lines as is for the providers you want to offer your users.
+//         firebase.auth.GoogleAuthProvider.PROVIDER_ID //,
+//         // firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+//         // firebase.auth.TwitterAuthProvider.PROVIDER_ID,
+//         // firebase.auth.GithubAuthProvider.PROVIDER_ID,
+//         // firebase.auth.EmailAuthProvider.PROVIDER_ID,
+//         // firebase.auth.PhoneAuthProvider.PROVIDER_ID
+//     ],
+// };
 
-ui1.start('#firebaseui-auth-container1', uiConfig1);
+// ui1.start('#firebaseui-auth-container1', uiConfig1);
 
 
 // const txtEmail = document.getElementsByClassName('txtEmail');
