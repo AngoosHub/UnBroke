@@ -14,7 +14,7 @@ function submitForm(form) {
   var fileName = selectedFile.name;
   var storageRef = firebase.storage().ref('/images/' + fileName);
   var uploadTask = storageRef.put(selectedFile);
-  
+
 
   uploadTask.snapshot.ref.getDownloadURL().then(function (downloadURL) {
     var data = {
@@ -25,9 +25,9 @@ function submitForm(form) {
       url: downloadURL
     }
 
-  var ref = database.ref('businesses/Dos Tacos/Coupons');
-  ref.push(data);
-  window.location.href = "../Business home/index.html";
+    var ref = database.ref('businesses/Dos Tacos/Coupons');
+    ref.push(data);
+    window.location.href = "../Business home/index.html";
   });
 
 
@@ -35,3 +35,8 @@ function submitForm(form) {
 
 
 }
+
+var goHome = document.getElementById("homeImage");
+goHome.addEventListener("click", function () {
+  window.location.href = "../Business Home/index.html";
+})
