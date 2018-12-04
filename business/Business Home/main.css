@@ -17,6 +17,7 @@ body {
 }
 
 .ad{
+  background-color: #d6ecf5;
   border-radius: 10px;
   margin: auto;
   margin-top: 80px;
@@ -77,7 +78,7 @@ body {
 
 #menu {
   float: left;
-  width: 3%;
+  width: 10%;
 }
 
 #menuImage {
@@ -85,22 +86,10 @@ body {
   height: 40px;
 }
 
-#searchlogo {
-  float: left;
-  width: 40%
-}
-
-#searchImage {
-  margin-bottom: 5px;
-  float: left;
-  width: 60px;
-  height: 60px;
-  transform: translateY(-7px) translateX(-6px);
-}
-
 #logo {
+  margin-left: auto;
   float: left;
-  width: 3%;
+  width: 40px;
 }
 
 #logoImage {
@@ -108,32 +97,37 @@ body {
   height: 40px;
 }
 
+
+#name {
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-right: auto;
+}
+
+.shell{
+  width: 200px;
+  margin: auto;
+}
+
+.logoWrapper{
+  float: left;
+  width: 80%;
+}
+
 #home {
   float: left;
-  width: 3.5%
+  width: 10%;
 }
 
 #homeImage {
+  float: right;
   width: 35px;
   height: 35px;
 }
 
-#couponbook {
-  float: left;
-  width: 3%;
-}
-
-#couponbookImage {
-  width: 33px;
-  height: 33px;
-}
-
-#name {
-  float: left;
-  width: 46%;
-  font-size: 35px;
-  font-weight: bold;
-  margin-left: 15px;
+.top{
+  height: 100px;
 }
 
 
@@ -149,30 +143,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.top{
-  height: 70px;
-}
-
 .delete{
+  margin-left: 2px;
   border-radius: 10px;
   text-transform: uppercase;
   border: 0;
   background: #005073;
-  padding: .5rem;
   color: white;
   width: 100px;
+  height: 30px;
   float: right;
   margin-right: 35px;
 }
 
 .edit{
+  margin-right: 2px;
   border-radius: 10px;
   text-transform: uppercase;
   border: 0;
   background: #005073;
-  padding: .5rem;
   color: white;
   width: 100px;
+  height: 30px;
   float: right;
 }
 
@@ -192,4 +184,10 @@ body {
   float: right;
   margin-bottom: 10px;
   margin-right: 10px;
+  margin-top: 10px;
+}
+
+.imageDiv>img{
+  width: 250px;
+  height: 210px;
 }

@@ -22,6 +22,7 @@ body {
 }
 
 .postForm>input, textarea{
+  background-color: #d6ecf5;
   border-radius: 10px;
   display: block;
   width: 100%;
@@ -47,7 +48,8 @@ body {
 
 #menu {
   float: left;
-  width: 3%;
+  width: 10%;
+  height: 10px;
 }
 
 #menuImage {
@@ -55,22 +57,10 @@ body {
   height: 40px;
 }
 
-#searchlogo {
-  float: left;
-  width: 40%
-}
-
-#searchImage {
-  margin-bottom: 5px;
-  float: left;
-  width: 60px;
-  height: 60px;
-  transform: translateY(-7px) translateX(-6px);
-}
-
 #logo {
+  margin-left: auto;
   float: left;
-  width: 3%;
+  width: 40px;
 }
 
 #logoImage {
@@ -78,16 +68,38 @@ body {
   height: 40px;
 }
 
+
+#name {
+  font-size: 35px;
+  font-weight: bold;
+  margin-left: 15px;
+  margin-right: auto;
+}
+
+.shell{
+  width: 200px;
+  margin: auto;
+}
+
+.logoWrapper{
+  float: left;
+  width: 80%;
+}
+
 #home {
   float: left;
-  width: 3.5%
+  width: 10%;
 }
 
 #homeImage {
+  float: right;
   width: 35px;
   height: 35px;
 }
 
+.top{
+  height: 100px;
+}
 #couponbook {
   float: left;
   width: 3%;

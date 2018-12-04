@@ -47,10 +47,10 @@ function refData(data) {
     var image = $("<div/>").addClass("imageDiv").html('<img src="' + dosTacos[k]["url"] + '">');
     dis.append(image);
 
-    var dlt = $('<button/>').addClass('delete').html('<p>Delete</p>');
+    var dlt = $('<button/>').addClass('delete').html('Delete');
     dis.append(dlt);
 
-    var edit = $('<button/>').addClass('edit').html('<p>Edit</p>');
+    var edit = $('<button/>').addClass('edit').html('Edit');
     dis.append(edit);
 
     $(".content").append(outer);

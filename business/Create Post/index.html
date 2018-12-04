@@ -27,20 +27,17 @@
 <body>
   <div class="top">
     <div id="menu">
-      
     </div>
-    <div id="searchlogo">
-      
+    <div class="logoWrapper">
+      <div class="shell">
+        <div id="logo">
+          <img src="images/logo.svg" id="logoImage">
+        </div>
+        <div id="name">UnBroke</div>
+      </div>
     </div>
-    <div id="logo">
-      <img src="images/logo.svg" id="logoImage">
-    </div>
-    <div id="name">UnBroke</div>
     <div id="home">
       <img src="images/home.png" id="homeImage">
-    </div>
-    <div id="couponbook">
-      
     </div>
   </div>
   <div class="content">
@@ -58,12 +55,13 @@
       <label for="endDate">End Date</label>
       <input type="date" name="endDate" id="endDate">
 
+      <label for="file">Promotion Picture</label>
       <input type="file" name="uploadF" id="file" class="upload-file">
 
       <input type="button" name="button" id="btn" value="post" onClick="submitForm(this.form)">
     </form>
   </div>
-   
+
 </body>
 <script src="main.js"></script>
 
