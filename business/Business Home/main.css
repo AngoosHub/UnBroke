@@ -84,8 +84,8 @@ body {
 }
 
 #menuImage {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
 }
 
 #logo {
@@ -191,4 +191,10 @@ body {
 .imageDiv>img{
   width: 250px;
   height: 210px;
+}
+
+#signOut{
+  float: right;
+  height: 35px;
+  width: 35px;
 }

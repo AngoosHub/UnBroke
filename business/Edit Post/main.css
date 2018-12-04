@@ -53,8 +53,9 @@ body {
 }
 
 #menuImage {
-  width: 40px;
-  height: 40px;
+  margin-left: 10px;
+  width: 35px;
+  height: 35px;
 }
 
 #logo {
@@ -92,7 +93,7 @@ body {
 }
 
 #homeImage {
-  float: right;
+  float: left;
   width: 35px;
   height: 35px;
 }

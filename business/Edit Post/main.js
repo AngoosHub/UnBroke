@@ -13,10 +13,6 @@ postNew.addEventListener("click", function () {
 var ref = database.ref('businesses');
 
 
-document.getElementById("promoTitle").value = 'testing';
-document.getElementById("discription").value = 'testing';
-document.getElementById("startDate").value = "2014-02-09";
-document.getElementById("endDate").value = "2020-09-12";
 
 ref.on('value', function (data) {
   var businesses = data.val();
@@ -28,8 +24,8 @@ ref.on('value', function (data) {
 
   document.getElementById("promoTitle").value = thisData["Name"];
   document.getElementById("discription").value = thisData["Deal"];
-  document.getElementById("startDate").value = thisData["StartDate"];
-  document.getElementById("endDate").value = thisData["EndDate"];
+  document.getElementById("startDate").value = thisData["Start_Date"];
+  document.getElementById("endDate").value = thisData["End_Date"];
 
   btnpress.addEventListener("click", function () {
     var title = document.getElementById("promoTitle").value;
