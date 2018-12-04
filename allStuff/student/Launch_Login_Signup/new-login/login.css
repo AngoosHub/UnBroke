@@ -1,10 +1,16 @@
+/* Creates style of the login page */
+
 body {
     background: url('images/bg.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    /* -webkit-filter: grayscale(0%);
+    -webkit-transition : -webkit-filter 600ms linear;
+    -webkit-filter: brightness(0%); */
 }
+
 /* 
 .logo {
     padding-right: 20px;
@@ -157,6 +163,8 @@ nav a:hover {
     cursor: pointer;
 }
 
+/* Animates the box flip */
+
 .login-box .change-login:hover .arrow {
     animation-name: arrow-move;
     animation-duration: 0.9s;
@@ -185,7 +193,7 @@ nav a:hover {
 
 
 
-/* Animations to attach */
+/* Animations to attach to login box to fade out/in */
 
 .animate-out {
     perspective: 500px;
@@ -216,14 +224,14 @@ nav a:hover {
 }
 
 .start-about-page {
-    animation-name: fate-out;
+    animation-name: fade-out;
     animation-duration: 0.6s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
 .end-about-page {
-    animation-name: fate-in;
+    animation-name: fade-in;
     animation-duration: 0.6s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
@@ -237,4 +245,30 @@ nav a:hover {
 @keyframes fade-in {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+/* body:hover {
+    -webkit-filter: grayscale(100%);
+} */
+
+#hidden {
+    display: none;
+}
+
+.unbroke-about-page {
+    box-sizing: border-box;
+    width: 600px;
+    height: 500px;
+    border-radius: 15px;
+    padding: 40px;
+    background: rgb(0, 0, 0, 0.96);
+    margin: 0 auto 202px;
+}
+
+.unbroke-about-page p {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
 }

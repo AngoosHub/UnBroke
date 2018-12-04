@@ -1,3 +1,10 @@
+/* This javascript file sets ups the custom user log in authenticate to database, and the default google login UI. */
+
+
+
+
+
+
 function setup() {
 
     //Sorry for all the commented code trying to optimize login
@@ -81,10 +88,8 @@ function setup() {
         auth.createUserWithEmailAndPassword(email, pass)
 
             .then(function () {
-                alert("check1");
                 auth.signInWithEmailAndPassword(email, pass)
                     .then(function () {
-                        alert("check2");
                         location.href = "../../Student Home/studenthome.html";
                         
                     })
