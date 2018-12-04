@@ -11,9 +11,10 @@ function refData(data) {
   $("body").append(newBodyEl);
 
   var businesses = data.val();
-  var dosTacos = businesses["Dos Tacos"]["Coupons"];
+  var dosTacos = businesses["Dos Tacos"];
+  var coupons = businesses["Dos Tacos"]["Coupons"];
 
-  var keys = Object.keys(dosTacos);
+  var keys = Object.keys(coupons);
 
   var current = $('<div/>').addClass('current').html('<p>Current Advertisements</p>');
   $(newBodyEl).append(current);
@@ -23,28 +24,31 @@ function refData(data) {
 
     var outer = $("<div/>").addClass("ad").attr('id', k);
 
-    var title = $("<div/>").addClass("title").html("<p>" + dosTacos[k]["Name"] + "</p>");
+    var title = $("<div/>").addClass("title").html("<p>" + coupons[k]["Name"] + "</p>");
     outer.append(title);
 
-    var dis = $("<div/>").addClass("discription").html("<p>" + dosTacos[k]["Deal"] + "</p>");
+    var dis = $("<div/>").addClass("discription").html("<p>" + coupons[k]["Deal"] + "</p>");
     outer.append(dis);
+
+    var QR = $("<div/>").addClass("QR").html('<img src="' + dosTacos["QR"] + '">');
+    outer.append(QR);
 
     var dates = $("<div/>").addClass("dates");
 
     var start = $("<div/>").addClass("startDate");
     var p1 = $("<p/>").addClass("dateTitle").html("Start Date:");
-    var p2 = $("<p/>").addClass("contentDate").html(dosTacos[k]["Start_Date"]);
+    var p2 = $("<p/>").addClass("contentDate").html(coupons[k]["Start_Date"]);
     start.append(p1).append(p2);
     dates.append(start);
 
     var start = $("<div/>").addClass("endDate");
     var p3 = $("<p/>").addClass("dateTitle").html("End Date:");
-    var p4 = $("<p/>").addClass("contentDate").html(dosTacos[k]["End_Date"]);
+    var p4 = $("<p/>").addClass("contentDate").html(coupons[k]["End_Date"]);
     start.append(p3).append(p4);
     dates.append(start);
     outer.append(dates);
 
-    var image = $("<div/>").addClass("imageDiv").html('<img src="' + dosTacos[k]["url"] + '">');
+    var image = $("<div/>").addClass("imageDiv").html('<img src="' + coupons[k]["url"] + '">');
     dis.append(image);
 
     var dlt = $('<button/>').addClass('delete').html('<p>Print</p>');
