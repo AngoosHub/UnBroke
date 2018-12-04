@@ -7,6 +7,7 @@ body {
 }
 
 .content{
+  min-height: 50px;
   width: 700px;
   margin: 0 auto;
   background-color: rgb(200, 200, 200, 0.3);;

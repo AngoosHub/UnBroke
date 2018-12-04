@@ -9,14 +9,13 @@ function refData(data) {
   $(".content").remove();
   var newBodyEl = $("<div/>").addClass("content");
   $("body").append(newBodyEl);
+  var current = $('<div/>').addClass('current').html('<p>Current Advertisements</p>');
+  $(newBodyEl).append(current);
 
   var businesses = data.val();
   var dosTacos = businesses["Dos Tacos"]["Coupons"];
 
   var keys = Object.keys(dosTacos);
-
-  var current = $('<div/>').addClass('current').html('<p>Current Advertisements</p>');
-  $(newBodyEl).append(current);
 
   for (var i = 0; i < keys.length; i++) {
     var k = keys[i];
