@@ -9,9 +9,9 @@ UnBroke is an academic project made by group-27 during BCIT's Projects 1 course.
 
 ## Authors
 
-<b>Angus Lin</b>
-<b>Kyle Murdoch</b>
-<b>Eugene Lee</b>
+<b>Angus Lin</b> --- https://github.com/AngoosHub<br/>
+<b>Kyle Murdoch</b> --- https://github.com/kylemurdoch<br/>
+<b>Eugene Lee</b> --- https://github.com/Yerrus
 
 ## Code
 
